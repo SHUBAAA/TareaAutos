@@ -1,36 +1,100 @@
 package Grupo.TareaAutos.Model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
-
-@Entity
-@Table
 public class Car {
 
-
-    @Id
     private Long ID;
-    @Column(nullable = false)
     private String Marca;
-    @Column(nullable = false)
     private String Año;
-    @Column(nullable = false)
     private String Color;
-    @Column(nullable = false)
     private int Precio;
-    @Column(nullable = false)
     private boolean Turbo;
-    @Column(nullable = false)
     private String Motor;
-    @Column(nullable = false)
     private boolean Cabinas;
-    @Column(nullable = false)
     private boolean Sunroof;
-    @Column(nullable = false)
-
     private int Popularidad;
+
+    public Long getID() {
+        return ID;
+    }
+
+    public void setID(Long ID) {
+        this.ID = ID;
+    }
+
+    public String getMarca() {
+        return Marca;
+    }
+
+    public void setMarca(String marca) {
+        Marca = marca;
+    }
+
+    public String getAño() {
+        return Año;
+    }
+
+    public void setAño(String año) {
+        Año = año;
+    }
+
+    public String getColor() {
+        return Color;
+    }
+
+    public void setColor(String color) {
+        Color = color;
+    }
+
+    public int getPrecio() {
+        return Precio;
+    }
+
+    public void setPrecio(int precio) {
+        Precio = precio;
+    }
+
+    public boolean isTurbo() {
+        return Turbo;
+    }
+
+    public void setTurbo(boolean turbo) {
+        Turbo = turbo;
+    }
+
+    public String getMotor() {
+        return Motor;
+    }
+
+    public void setMotor(String motor) {
+        Motor = motor;
+    }
+
+    public boolean isCabinas() {
+        return Cabinas;
+    }
+
+    public void setCabinas(boolean cabinas) {
+        Cabinas = cabinas;
+    }
+
+    public boolean isSunroof() {
+        return Sunroof;
+    }
+
+    public void setSunroof(boolean sunroof) {
+        Sunroof = sunroof;
+    }
+
+    public int getPopularidad() {
+        return Popularidad;
+    }
+
+    public void setPopularidad(int popularidad) {
+        Popularidad = popularidad;
+    }
+
+    public Car() {
+    }
 
     public Car(Long ID, String marca, String año, String color, int precio, boolean turbo, String motor, boolean cabinas, boolean sunroof, int popularidad) {
         this.ID = ID;
