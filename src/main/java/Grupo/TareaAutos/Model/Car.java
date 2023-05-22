@@ -2,14 +2,16 @@ package Grupo.TareaAutos.Model;
 
 public class Car {
 
+
     private Long ID;
     private String Marca;
-    private String Año;
+    private int Año;
     private String Color;
     private int Precio;
     private boolean Turbo;
+    private String Tipo;
     private String Motor;
-    private boolean Cabinas;
+    private int Cabinas;
     private boolean Sunroof;
     private int Popularidad;
 
@@ -29,11 +31,19 @@ public class Car {
         Marca = marca;
     }
 
-    public String getAño() {
+    public int getAño() {
         return Año;
     }
 
-    public void setAño(String año) {
+    public String getTipo() {
+        return Tipo;
+    }
+
+    public void setTipo(String tipo) {
+        Tipo = tipo;
+    }
+
+    public void setAño(int año) {
         Año = año;
     }
 
@@ -69,11 +79,11 @@ public class Car {
         Motor = motor;
     }
 
-    public boolean isCabinas() {
+    public int getCabinas() {
         return Cabinas;
     }
 
-    public void setCabinas(boolean cabinas) {
+    public void setCabinas(int cabinas) {
         Cabinas = cabinas;
     }
 
@@ -96,7 +106,7 @@ public class Car {
     public Car() {
     }
 
-    public Car(Long ID, String marca, String año, String color, int precio, boolean turbo, String motor, boolean cabinas, boolean sunroof, int popularidad) {
+    public Car(Long ID, String marca, int año, String color, int precio, boolean turbo, String motor, int cabinas, boolean sunroof, int popularidad) {
         this.ID = ID;
         Marca = marca;
         Año = año;
