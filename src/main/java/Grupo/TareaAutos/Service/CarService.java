@@ -2,6 +2,7 @@ package Grupo.TareaAutos.Service;
 
 import Grupo.TareaAutos.Model.Car;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
@@ -10,16 +11,18 @@ public class CarService {
 
 
     public static List<Car> generarAutoRandom(int cantidad) {
-        List<String> marcas = Arrays.asList("Marca1", "Marca2", "Marca3", "Marca4", "Marca5");
-        List<String> colores = Arrays.asList("Rojo", "Azul", "Verde", "Blanco", "Negro");
+        List<String> marcas = Arrays.asList("Kia", "Nissan", "Toyota", "Peugeot", "Bmw", "Opel", "Audi", "Chevrolet", "Ford", "GMC");
+        List<String> colores = Arrays.asList("Azul", "Blanco", "Negro", "Naranja", "Gris", "Verde","Rojo","Amarillo","Purpura");
         List<String> tipos = Arrays.asList("Sedan", "Camioneta", "SUV");
         List<String> motoresSedan = Arrays.asList("1.4cc", "1.6cc", "2.0cc");
         List<String> motoresCamioneta = Arrays.asList("2.4cc", "3.0cc", "4.0cc");
         List<String> motoresSUV = Arrays.asList("1.8cc", "2.2cc", "2.8cc");
+        List<Car> autosGenerados = new ArrayList<>();
         Random random = new Random();
 
         for (int i = 0; i < cantidad; i++) {
             Car auto = new Car();
+            auto.setID((long) (i + 1));
             auto.setMarca(marcas.get(random.nextInt(marcas.size())));
             auto.setAño(random.nextInt(9) + 2015);
             auto.setColor(colores.get(random.nextInt(colores.size())));
@@ -37,8 +40,10 @@ public class CarService {
             }
             auto.setPopularidad(0);
 
+            autosGenerados.add(auto);
+
         }
-        return List<Car>;
+        return autosGenerados;
     }
 
 
