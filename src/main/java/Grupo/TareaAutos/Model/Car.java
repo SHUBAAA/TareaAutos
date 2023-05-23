@@ -55,7 +55,7 @@ public class Car {
         Color = color;
     }
 
-    public int getPrecio() {
+    public  int getPrecio() {
         return Precio;
     }
 
