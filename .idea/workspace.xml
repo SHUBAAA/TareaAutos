@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdee3c60-5887-4772-9b20-410d2848f229" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/SpringBack/.github/workflows/maven.yml" afterDir="false" />
-    </list>
+    <list default="true" id="cdee3c60-5887-4772-9b20-410d2848f229" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,6 +36,10 @@
     "git-widget-placeholder": "Pipeline",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/Lalol/OneDrive/Escritorio/s/ingsoft/TareaAutos/SpringBack",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -50,7 +52,7 @@
       <option name="presentableId" value="Default" />
       <updated>1684814024613</updated>
       <workItem from="1684814026667" duration="141000" />
-      <workItem from="1684815499984" duration="148000" />
+      <workItem from="1684815499984" duration="506000" />
     </task>
     <servers />
   </component>
