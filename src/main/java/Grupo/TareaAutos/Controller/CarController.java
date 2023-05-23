@@ -24,10 +24,16 @@ public class CarController {
         return CarService.obtenerAutosGenerados();
     }
 
-    @RequestMapping("/filtro")
+    @RequestMapping("/filtroMenor")
     @ResponseBody
-    public List<Car> filtrar(@RequestParam("precio") int precio) {
-        return CarService.filtrarAuto(precio);
+    public List<Car> filtrarMenor(@RequestParam("precio") int precio) {
+        return CarService.filtrarAutoMenor(precio);
+    }
+
+    @RequestMapping("/filtroMayor")
+    @ResponseBody
+    public List<Car> filtrarMayor(@RequestParam("precio") int precio) {
+        return CarService.filtrarAutoMayor(precio);
     }
 
 

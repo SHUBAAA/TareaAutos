@@ -54,7 +54,19 @@ public class CarService {
         return autosGenerados;
     }
 
-    public static List<Car> filtrarAuto(int precio) {
+    public static List<Car> filtrarAutoMayor(int precio) {
+        List<Car> autosFiltrados = new ArrayList<>();
+
+        for (Car auto : autosGenerados) {
+            if (auto.getPrecio() >= precio) {
+                autosFiltrados.add(auto);
+            }
+        }
+
+        return autosFiltrados;
+    }
+
+    public static List<Car> filtrarAutoMenor(int precio) {
         List<Car> autosFiltrados = new ArrayList<>();
 
         for (Car auto : autosGenerados) {
