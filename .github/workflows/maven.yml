@@ -2,7 +2,7 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ "feature/Prueba" ]
+    branches: [ "Pipeline" ]
 
 jobs:
   build:
